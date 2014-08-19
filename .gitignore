@@ -55,5 +55,5 @@ tmp*
 !tmp*py
 buildout.in
 
-src/multipath-tools-poller/__version__.py
+src/multipathd_udev_monitor/__version__.py
 bootstrap.py
