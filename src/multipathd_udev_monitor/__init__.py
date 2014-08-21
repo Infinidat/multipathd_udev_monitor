@@ -61,7 +61,3 @@ def poll():
             if 111 != e.errno:
                 syslog.syslog(syslog.LOG_ERROR, 'Socket error {errno}'.format(e.errno))
             time.sleep(1)
-
-
-def nothing():
-    pass

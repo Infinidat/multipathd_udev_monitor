@@ -1,0 +1,9 @@
+Package: multipathd-udev-monitor
+Version: $version
+Section: base
+Priority: optional
+Maintainer: Infinidat
+Homepage: http://www.infinidat.com
+Architecture: $arch
+Depends: multipath-tools
+Description: A daemon that relays udev events from libudev to multipathd unix domain socket
