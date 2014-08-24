@@ -59,7 +59,7 @@ def build_deb_package():
                             "./debian/DEBIAN/control"])
     execute_assert_success(["sed", "-i", "s/$arch/{arch}/g".format(arch=get_arch_name_for_control()),
                             "./debian/DEBIAN/control"])
-    execute_assert_success(["dpkg-deb", "--build", "./debian", "./build/{name}".format(name=get_deb_filename())])
+    execute_assert_success(["dpkg-deb", "--build", "./debian", "./parts/{name}".format(name=get_deb_filename())])
 
 
 if __name__ == '__main__':
