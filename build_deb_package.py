@@ -54,6 +54,7 @@ def get_deb_filename():
 
 def build_deb_package():
     execute_assert_success(["projector", "devenv", "pack"])
+    execute_assert_success(["mkdir", "-p", "./debian/sbin"])
     execute_assert_success(["cp", "./dist/multipathd_udev_monitor", "./debian/sbin"])
     execute_assert_success(["sed", "-i", "s/$version/{ver}/g".format(ver=get_project_version__short()),
                             "./debian/DEBIAN/control"])
