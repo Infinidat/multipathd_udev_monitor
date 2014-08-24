@@ -1,6 +1,6 @@
 from infi.execute import execute_assert_success
 
-PACKAGE_NAME = 'multipathd_udev_monitor'
+PACKAGE_NAME = 'multipathd-udev-monitor'
 
 def is_64bit():
     from sys import maxsize
