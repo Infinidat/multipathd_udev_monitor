@@ -5,13 +5,13 @@
 # Required-Stop:     multipath-tools $syslog
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# Short-Description: multipathd-udev-monitor 
+# Short-Description: multipathd-udev-monitor
 # Description:
 ### END INIT INFO
 
 PATH=/sbin
 DAEMON=/sbin/multipathd_udev_monitor
-NAME=multipathd-udev-monitor
+NAME=multipathd_udev_monitor
 DESC="Infinidat multipathd udev monitor utility"
 DAEMON_OPTS=
 
