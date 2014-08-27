@@ -57,3 +57,4 @@ buildout.in
 
 src/multipathd_udev_monitor/__version__.py
 bootstrap.py
+src/multipathd_udev_monitor/__version__.py
