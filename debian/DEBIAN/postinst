@@ -1,0 +1,3 @@
+#!/bin/sh
+update-rc.d -f multipathd-udev-monitor defaults
+service multipathd-udev-monitor start
