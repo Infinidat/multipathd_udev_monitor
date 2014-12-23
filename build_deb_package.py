@@ -33,7 +33,7 @@ def get_project_version__short():
     from multipathd_udev_monitor.__version__ import __version__
     from pkg_resources import parse_version
     version_numbers = []
-    parsed_version = list(parse_version(__version__))
+    parsed_version = parse_version(__version__).public.split('.')
     for item in parsed_version:
         if not item.isdigit():
             break
